@@ -7,7 +7,6 @@ let [numPerPage, page, lastPage] = [12, 1]
 let [allUsers, favoriteUsers, users] = [[], [], []]
 let displayFavorite = false
 
-
 axios.get(indexURL)
   .then((response) => {
     users = allUsers = response.data.results
